@@ -167,7 +167,7 @@ ConfigurationOfStamp >> project [
 { #category : #tags }
 ConfigurationOfStamp >> stable: spec [
 	<symbolicVersion: #'stable'>
-	spec for: #common version: '2'
+	spec for: #common version: '3'
 ]
 
 { #category : #versions }
@@ -187,5 +187,15 @@ ConfigurationOfStamp >> version2: spec [
 		spec
 			blessing: #release;
 			package: 'Stamp' with: 'Stamp-SvenVanCaekenberghe.22' ]
+
+]
+
+{ #category : #versions }
+ConfigurationOfStamp >> version3: spec [
+	<version: '3' imports: #('1-baseline')>
+	spec for: #common do: [
+		spec
+			blessing: #release;
+			package: 'Stamp' with: 'Stamp-HolgerHansPeterFreyther.23' ]
 
 ]
